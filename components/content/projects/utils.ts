@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: "buztop",
+    title: "buztop - Scalable Newsletter App",
     description:
-      "A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js and Cloudflare Queues, designed to efficiently handle high volumes of subscribers and email dispatches. Containerized the application using Docker to ensure production-ready performance and scalability.",
+      "A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js and Cloudflare Queues.",
     img: "/buztop.png", // Add an image path if available
     href: "/projects/buztop",
     preview: "", // Add a live preview link if available
@@ -13,9 +13,9 @@ export const projects = [
     delay: 0.1,
   },
   {
-    title: "AICare",
+    title: "AICare - Healthcare AI Assistant",
     description:
-      "An AI-powered healthcare platform using RAG for efficient medical data processing, with LangChain and Pinecone for document retrieval. Integrated AI-generated embeddings via neural networks to provide personalized health insights and symptom analysis.",
+      "An AI-powered healthcare platform using RAG for efficient medical data processing, with LangChain and Pinecone for document retrieval and symptom analysis",
     img: "/aicare.png", // Add an image path if available
     href: "/projects/aicare",
     preview: "", // Add a live preview link if available
@@ -26,31 +26,29 @@ export const projects = [
     delay: 0.2,
   },
   {
-    title: "spotAI - Smart Parking Management",
+    title: "spotAI - Smart Parking",
     description:
-      "A Smart Parking Management app utilizing Next.js, MongoDB, and React. The project includes a simulator that uses Machine Vision to scan license plates. Built with Python and YOLO V8 AI model, it integrates OpenCV, RoboFlow, and EasyOCR with NextJS to simulate a car driving through a parking garage and a camera reading the plate.",
+      "A smart parking management app that uses computer vision to detect license plates and locate available parking spots in real-time. Built with PyTorch and OpenCV.",
     img: "/spotai.png", // Add an image path if available
     href: "/projects/spotai",
     preview: "", // Add a live preview link if available
     github: "https://github.com/par4m/spotai", // Add GitHub link if available
     alt: "spotAI",
     platform: "Web",
-    stack:
-      "Next.js, MongoDB, React, Python, YOLO V8, OpenCV, RoboFlow, EasyOCR",
+    stack: "PyTorch, OpenCV, YOLOv8, EasyOCR, Next.js",
     delay: 0.3,
   },
   {
-    title: "felt - Video Sentiments",
+    title: "felt - Sentiment AI",
     description:
-      "A multimodal AI model built from scratch using PyTorch. The model accepts a video as input and predicts its sentiment and emotion. Features include text, video, and audio encoding, multimodal fusion, and emotion/sentiment classification. After training, the model is deployed as a SaaS, allowing users to run inference on their videos through an API.",
+      "An AI model built with Next.js and PyTorch that takes a video as input and predicts its sentiment and emotion.",
     img: "/felt.png", // Add an image path if available
     href: "/projects/felt",
     preview: "", // Add a live preview link if available
     github: "https://github.com/par4m/felt", // Add GitHub link if available
     alt: "felt",
     platform: "Web",
-    stack:
-      "PyTorch, Multimodal AI, Sentiment Analysis, Emotion Classification, SaaS",
+    stack: "PyTorch, Next.js, Multimodal AI, Sentiment Analysis",
     delay: 0.4,
   },
 ];

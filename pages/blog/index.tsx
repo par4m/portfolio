@@ -42,9 +42,8 @@ const Blog = ({ sources }: Props) => {
       <Flex direction={"column"} css={{}}>
         <Text h1>Blog</Text>
         <Text span css={{ color: "$accents8" }}>
-          Ive been writing online since 2014, mostly about web development and
-          tech careers. In total, Ive written 51 articles on my blog. Use the
-          search below to filter by title.
+          I write about tech, open source and productivity as a developer and in
+          general. Use the search below to filter by title.
         </Text>
         <Box css={{ my: "$8" }}>
           <Input
