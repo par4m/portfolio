@@ -40,7 +40,7 @@ export const projects = [
     delay: 0.3,
   },
   {
-    title: "felt - Multimodal AI Model",
+    title: "felt - Video Sentiments",
     description:
       "A multimodal AI model built from scratch using PyTorch. The model accepts a video as input and predicts its sentiment and emotion. Features include text, video, and audio encoding, multimodal fusion, and emotion/sentiment classification. After training, the model is deployed as a SaaS, allowing users to run inference on their videos through an API.",
     img: "/felt.png", // Add an image path if available
