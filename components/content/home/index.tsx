@@ -101,13 +101,10 @@ export const Home = () => {
               display: "block",
             }}
           >
-            I am a backend developer with a passion for building scalable
-            systems and contributing to open-source projects. Proficient in Rust
-            and Golang, I enjoy working on high-performance, concurrent
-            applications. I also have a keen interest in machine learning,
-            leveraging AI to solve real-world problems. Whether it’s optimizing
-            backend infrastructure or exploring innovative ML solutions, I
-            thrive on creating efficient, reliable, and impactful software.
+            Hi, I’m Param. I’m a 3rd Year CS student @ MIT Manipal who loves
+            open source, working with Rust and Golang. I’m also into DevOps and
+            ML, and I enjoy building things that are scalable, efficient, and
+            impactful.
           </Text>
 
           <Flex justify={"center"} css={{ mt: "$8" }}>
