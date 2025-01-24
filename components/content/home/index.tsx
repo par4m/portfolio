@@ -10,7 +10,12 @@ import { useRouter } from "next/router";
 import { LinkIcon } from "../../icons/link-icon";
 import { GridContainer } from "../../styles/grid";
 
-const SkillItem = ({ icon, skill }) => (
+interface SkillItemProps {
+  icon: React.ReactNode; // Assuming `icon` is a React component or element
+  skill: string; // Assuming `skill` is a string
+}
+
+const SkillItem = ({ icon, skill }: SkillItemProps) => (
   <Box
     as={"li"}
     css={{
