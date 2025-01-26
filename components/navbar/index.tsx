@@ -93,11 +93,11 @@ export const NavbarWrapper = () => {
           </Navbar.Link>
         </NextLink>
 
-        <NextLink href="/uses">
-          <Navbar.Link href="#" isActive={router.pathname === "/uses"}>
-            Uses
-          </Navbar.Link>
-        </NextLink>
+        {/* <NextLink href="/uses"> */}
+        {/*   <Navbar.Link href="#" isActive={router.pathname === "/uses"}> */}
+        {/*     Uses */}
+        {/*   </Navbar.Link> */}
+        {/* </NextLink> */}
       </Navbar.Content>
       <Navbar.Content
         css={{

@@ -266,83 +266,10 @@ export const Home = () => {
       {/*   </Box> */}
       {/* </SectionAnimation> */}
       <br />
-      <SectionAnimation delay={0.3}>
-        <Box css={{ mb: "$10" }}>
-          <Text h3>Contact</Text>
-          <Box
-            as={"ul"}
-            css={{
-              m: 0,
-              display: "flex", // Use flexbox to align items horizontally
-              gap: "$4", // Add spacing between items
-              alignItems: "center", // Align items vertically in the center
-              flexWrap: "nowrap", // Prevent wrapping
-              overflowX: "auto", // Allow horizontal scrolling if needed
-              "@xsMax": {
-                flexWrap: "wrap", // Allow wrapping on small screens
-              },
-            }}
-          >
-            <Box as={"li"}>
-              <Link
-                block
-                target={"_blank"}
-                color="primary"
-                href="https://github.com/par4m"
-              >
-                <Button
-                  light
-                  color="primary"
-                  auto
-                  icon={<GithubIcon />}
-                  ripple={false}
-                  css={{ pl: "$3" }}
-                >
-                  @par4m
-                </Button>
-              </Link>
-            </Box>
-            <Box as={"li"}>
-              <Link
-                block
-                target={"_blank"}
-                color="primary"
-                href="https://www.linkedin.com/in/paramar"
-              >
-                <Button
-                  light
-                  color="primary"
-                  auto
-                  icon={<LinkedinIcon />}
-                  ripple={false}
-                  css={{ pl: "$3" }}
-                >
-                  @Param Arora
-                </Button>
-              </Link>
-            </Box>
-            <Box as={"li"}>
-              <Link
-                block
-                target={"_blank"}
-                color="primary"
-                href="mailto:paramarora1405@gmail.com"
-              >
-                <Button
-                  light
-                  color="primary"
-                  auto
-                  icon={<GmailIcon />} // Assuming you have a GmailIcon component
-                  ripple={false}
-                  css={{ pl: "$3" }}
-                >
-                  paramarora1405@gmail.com
-                </Button>
-              </Link>
-            </Box>
-          </Box>
-        </Box>
-      </SectionAnimation>{" "}
+      <Text h4>
+        I also maintain a list of what I <Link href="/uses">use</Link> and what
+        I am <Link href="/reading">reading</Link>
+      </Text>
     </Box>
   );
 };
