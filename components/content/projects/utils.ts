@@ -5,11 +5,11 @@ export const projects = [
       'A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js, Redis, BullMQ.',
     img: '/buztop.png', // Add an image path if available
     href: '/projects/buztop',
-    preview: 'digest.paramarora.com', // Add a live preview link if available
+    preview: 'https://digest.paramarora.com', // Add a live preview link if available
     github: 'https://github.com/par4m/buztop', // Add GitHub link if available
     alt: 'buztop',
     platform: 'Web',
-    stack: 'Next.js, Redis, Queues, Docker, Pub/Sub Architecture',
+    stack: 'Next.js, Redis, Message Queues, Workers, Docker, Pub/Sub Architecture',
     delay: 0.1,
   },
   {
