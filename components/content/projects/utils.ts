@@ -1,6 +1,33 @@
 export const projects = [
   {
-    title: 'goSync - Async API Template for Go',
+    title: 'Compliance Navigator',
+    description:
+      'An AI-powered contract auditor that enables startups, founders, and legal professionals to achieve 90% faster contract validation and reduce review time by 70%, streamlining compliance and minimizing legal risks',
+    img: '/legal.png', // Add an image path if available
+    href: '/projects/legal',
+    preview: 'https://legal-loop.vercel.app', // Add a live preview link if available
+    github: 'https://github.com/par4m/legalLoop', // Add GitHub link if available
+    alt: 'buztop',
+    platform: 'Web',
+    stack: 'Next.js, FastAPI, LangChain',
+    delay: 0.1,
+  },
+  {
+    title: 'Scalable Newsletter App',
+    description:
+      'A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js, Redis, BullMQ.',
+    img: '/buztop.png', // Add an image path if available
+    href: '/projects/buztop',
+    preview: 'https://digest.paramarora.com', // Add a live preview link if available
+    github: 'https://github.com/par4m/buztop', // Add GitHub link if available
+    alt: 'buztop',
+    platform: 'Web',
+    stack: 'Next.js, Redis, Message Queues, Workers, Docker, Pub/Sub Architecture',
+    delay: 0.1,
+  },
+
+  {
+    title: 'Async API Template for Go',
     description: 'fast and scalable api backend template for golang ',
     img: '/gosync.jpeg', // Add an image path if available
     href: '/projects/gosync',
@@ -22,19 +49,6 @@ export const projects = [
     alt: 'GoSwarm',
     platform: 'Web',
     stack: 'godot4, golang, sqlite, sqlc, protobuf, docker',
-    delay: 0.1,
-  },
-  {
-    title: 'buztop - Scalable Newsletter App',
-    description:
-      'A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js, Redis, BullMQ.',
-    img: '/buztop.png', // Add an image path if available
-    href: '/projects/buztop',
-    preview: 'https://digest.paramarora.com', // Add a live preview link if available
-    github: 'https://github.com/par4m/buztop', // Add GitHub link if available
-    alt: 'buztop',
-    platform: 'Web',
-    stack: 'Next.js, Redis, Message Queues, Workers, Docker, Pub/Sub Architecture',
     delay: 0.1,
   },
   {
