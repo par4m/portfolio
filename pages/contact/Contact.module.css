@@ -1,8 +1,7 @@
 .calWrapper {
-  width: 100vw;
-  max-width: 100%;
-  margin-left: calc(-50vw + 50%);
-  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
@@ -10,17 +9,30 @@
 .introText {
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 20px 0;
+  padding: 40px 16px 0;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #fff;
-  whitespace: 'nowrap';
+  white-space: normal; /* fixed typo 'whitespace' -> 'white-space' and changed to normal for wrapping */
 }
 
 .calendarBox {
-  padding: 50px 0;
+  padding: 40px 0 20px;
   width: 100%;
-  height: 700px;
+  height: auto;
   overflow: hidden;
+}
+
+/* Add a responsive media query for better control on smaller screens */
+@media (max-width: 768px) {
+  .introText {
+    font-size: 0.95rem;
+    padding: 30px 12px 0;
+  }
+
+  .calendarBox {
+    padding: 30px 0 10px;
+    height: 600px;
+  }
 }

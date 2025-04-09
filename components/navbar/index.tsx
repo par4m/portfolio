@@ -1,47 +1,47 @@
-import React, { useEffect, useState } from "react";
-import { Navbar, Link, Text } from "@nextui-org/react";
-import { LogoIcon } from "../icons/logo-icon";
-import { Toggle } from "./toggle";
-import { useRouter } from "next/router";
-import NextLink from "next/link";
+import React, { useEffect, useState } from 'react'
+import { Navbar, Link, Text } from '@nextui-org/react'
+import { LogoIcon } from '../icons/logo-icon'
+import { Toggle } from './toggle'
+import { useRouter } from 'next/router'
+import NextLink from 'next/link'
 
 export const NavbarWrapper = () => {
-  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState();
-  const router = useRouter();
-  const collapseItems = ["About", "Projects", "Blog"];
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false)
+  const [activeMenu, setActiveMenu] = useState()
+  const router = useRouter()
+  const collapseItems = ['About', 'Projects', 'Blog']
 
   useEffect(() => {
     // @ts-ignore
-    document.body.style.overflow = null;
-    isSideMenuOpen && (document.body.style.overflow = "hidden");
-  }, [isSideMenuOpen]);
+    document.body.style.overflow = null
+    isSideMenuOpen && (document.body.style.overflow = 'hidden')
+  }, [isSideMenuOpen])
 
   const HandleSideMenu = (flag = false, index = undefined) => {
-    setActiveMenu(index);
-    flag && setIsSideMenuOpen(!isSideMenuOpen);
-    isSideMenuOpen && setIsSideMenuOpen(false);
-  };
+    setActiveMenu(index)
+    flag && setIsSideMenuOpen(!isSideMenuOpen)
+    isSideMenuOpen && setIsSideMenuOpen(false)
+  }
   return (
     <Navbar
       variant="floating"
-      maxWidth={"sm"}
+      maxWidth={'sm'}
       css={{
-        bg: "none",
+        bg: 'none',
 
-        "& .nextui-navbar-container": {
-          mt: "$0",
+        '& .nextui-navbar-container': {
+          mt: '$0',
           // 'mx': '$6',
-          "--nextui--navbarContainerMaxWidth": "800px",
+          '--nextui--navbarContainerMaxWidth': '800px',
         },
-        "@xsMax": {
-          "& .nextui-navbar-container": {
-            mx: "$0",
-            borderTopRightRadius: "0",
-            borderTopLeftRadius: "0",
+        '@xsMax': {
+          '& .nextui-navbar-container': {
+            mx: '$0',
+            borderTopRightRadius: '0',
+            borderTopLeftRadius: '0',
             ...(isSideMenuOpen && {
-              borderBottomRightRadius: "0",
-              borderBottomLeftRadius: "0",
+              borderBottomRightRadius: '0',
+              borderBottomLeftRadius: '0',
             }),
           },
         },
@@ -55,12 +55,12 @@ export const NavbarWrapper = () => {
       <NextLink href="/">
         <Navbar.Brand
           css={{
-            cursor: "pointer",
-            transition: "all 0.1s ease-in-out",
-            "&:hover": {
-              color: "$accents8",
-              "& svg": {
-                transform: "rotate(20deg)",
+            cursor: 'pointer',
+            transition: 'all 0.1s ease-in-out',
+            '&:hover': {
+              color: '$accents8',
+              '& svg': {
+                transform: 'rotate(20deg)',
               },
             },
           }}
@@ -69,27 +69,25 @@ export const NavbarWrapper = () => {
           <Text b color="inherit"></Text>
         </Navbar.Brand>
       </NextLink>
-      <Navbar.Content
-        enableCursorHighlight
-        activeColor="default"
-        hideIn="xs"
-        variant="highlight"
-      >
+      <Navbar.Content enableCursorHighlight activeColor="default" hideIn="xs" variant="highlight">
         <NextLink href="/">
-          <Navbar.Link isActive={router.pathname === "/"}>About</Navbar.Link>
+          <Navbar.Link isActive={router.pathname === '/'}>About</Navbar.Link>
         </NextLink>
         <NextLink href="/projects">
-          <Navbar.Link
-            href="#"
-            isActive={router.pathname.includes("/projects")}
-          >
+          <Navbar.Link href="#" isActive={router.pathname.includes('/projects')}>
             Projects
           </Navbar.Link>
         </NextLink>
 
         <NextLink href="/blog">
-          <Navbar.Link href="#" isActive={router.pathname === "/blog"}>
+          <Navbar.Link href="#" isActive={router.pathname === '/blog'}>
             Blog
+          </Navbar.Link>
+        </NextLink>
+
+        <NextLink href="/contact">
+          <Navbar.Link href="#" isActive={router.pathname === '/contact'}>
+            Contact
           </Navbar.Link>
         </NextLink>
 
@@ -101,9 +99,9 @@ export const NavbarWrapper = () => {
       </Navbar.Content>
       <Navbar.Content
         css={{
-          "@xs": {
-            w: "12%",
-            jc: "flex-end",
+          '@xs': {
+            w: '12%',
+            jc: 'flex-end',
           },
         }}
       >
@@ -114,17 +112,17 @@ export const NavbarWrapper = () => {
           <Navbar.CollapseItem
             key={item}
             isActive={
-              (item === "About" && router.pathname === "/") ||
-              (item === "Projects" && router.pathname === "/projects") ||
-              (item === "Blog" && router.pathname === "/blog")
+              (item === 'About' && router.pathname === '/') ||
+              (item === 'Projects' && router.pathname === '/projects') ||
+              (item === 'Blog' && router.pathname === '/blog')
             }
           >
-            <NextLink href={(item === "About" && "/") || item.toLowerCase()}>
+            <NextLink href={(item === 'About' && '/') || item.toLowerCase()}>
               <Link
                 onClick={() => HandleSideMenu()}
                 color="inherit"
                 css={{
-                  minWidth: "100%",
+                  minWidth: '100%',
                 }}
                 href="#"
               >
@@ -135,5 +133,5 @@ export const NavbarWrapper = () => {
         ))}
       </Navbar.Collapse>
     </Navbar>
-  );
-};
+  )
+}
