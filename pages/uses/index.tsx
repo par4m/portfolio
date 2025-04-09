@@ -1,15 +1,14 @@
-import React from "react";
-import styles from "./Uses.module.css"; // Import CSS Module
+import React from 'react'
+import styles from './Uses.module.css' // Import CSS Module
 
 function Uses() {
   return (
     <div className={styles.usesContainer}>
       <br />
       <p>
-        I often get asked about my computing setup—my computers, the software I
-        run on them, how I host my services, and other choices of personal
-        technology. This is a relatively up-to-date list detailing what I’m
-        currently using.
+        I often get asked about my computing setup—my computers, the software I run on them, how I
+        host my services, and other choices of personal technology. This is a relatively up-to-date
+        list detailing what I’m currently using.
       </p>
       <br />
 
@@ -84,7 +83,7 @@ function Uses() {
         </ul>
       </section>
     </div>
-  );
+  )
 }
 
-export default Uses;
+export default Uses

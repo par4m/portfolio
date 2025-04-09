@@ -61,7 +61,7 @@ export const Home = () => {
       <Card variant="flat" css={{ marginBottom: '$10' }}>
         <Card.Body css={{ backgroundColor: '$accents2' }}>
           <Text css={{ fontFamily: 'inherit', textAlign: 'center' }} as={'p'}>
-            Hello, I&apos;m Param. I&apos;m a software engineer based in Gurgaon, India!
+            Hello, I&apos;m Param. I&apos;m a software engineer based in India!
           </Text>
         </Card.Body>
       </Card>
@@ -112,6 +112,12 @@ export const Home = () => {
           <Box as={'ul'} css={{ m: 0 }}>
             <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
               <Text span css={{ mr: '1em' }} weight={'bold'}>
+                Mar 2025 - Present
+              </Text>
+              <Text span>Scottish Tech Army - Volunteer</Text>
+            </Box>
+            <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
+              <Text span css={{ mr: '1em' }} weight={'bold'}>
                 Jan 2025 - Present
               </Text>
               <Text span>Layer5 - Member / Contributer</Text>
@@ -122,17 +128,19 @@ export const Home = () => {
               </Text>
               <Text span>Backend Intern At Web Globe India</Text>
             </Box>
-            <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
+            <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em', whiteSpace: 'nowrap' }}>
               <Text span css={{ mr: '1em' }} weight={'bold'}>
                 Sep 2024 - Nov 2024
               </Text>
-              <Text span>ML Intern At Invisible Mechanics(Unacademy)</Text>
+              <Text span>Founding Engineer at Invisible Mechanics - Acquired by Unacademy</Text>
             </Box>
             <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
               <Text span css={{ mr: '1em' }} weight={'bold'}>
                 May 2024 - July 2024
               </Text>
-              <Text span>SDE Intern at Indian Oil Corporation (IOC)</Text>
+              <Text span css={{ whiteSpace: 'nowrap' }}>
+                SWE Intern at Indian Oil Corporation (IOC)
+              </Text>
             </Box>
             <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
               <Text span css={{ mr: '1em' }} weight={'bold'}>

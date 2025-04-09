@@ -15,7 +15,7 @@ export const projects = [
   {
     title: 'Scalable Newsletter App',
     description:
-      'A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js, Redis, BullMQ.',
+      'A Scalable Newsletter Application based on a Pub/Sub architecture using Next.js, Redis, AWS Queues.',
     img: '/buztop.png', // Add an image path if available
     href: '/projects/buztop',
     preview: 'https://digest.paramarora.com', // Add a live preview link if available
@@ -23,6 +23,19 @@ export const projects = [
     alt: 'buztop',
     platform: 'Web',
     stack: 'Next.js, Redis, Message Queues, Workers, Docker, Pub/Sub Architecture',
+    delay: 0.1,
+  },
+  {
+    title: 'VerbAI - Autonomous AI Voice Agents',
+    description:
+      'Self hosted, scalable AI voice platform delivering real time text to speech, voice conversion, and custom voice generation APIs with 90% faster audio synthesis to seamlessly power AI voice agents and voice driven applications ',
+    img: '/verb.jpg', // Add an image path if available
+    href: '/projects/verb',
+    preview: 'https://voice.paramarora.com', // Add a live preview link if available
+    github: 'https://github.com/par4m/VerbAI', // Add GitHub link if available
+    alt: 'buztop',
+    platform: 'Web',
+    stack: 'Next.js, Python, PyTorch, FastAPI, Docker, AWS S3',
     delay: 0.1,
   },
 
@@ -38,19 +51,7 @@ export const projects = [
     stack: 'go, postgres, docker, aws, queues, s3',
     delay: 0.1,
   },
-  {
-    title: 'GoSwarm - A MMO Game in Go',
-    description:
-      'A real-time multiplayer game powered by Godot 4 and Golang, featuring scalable networking and async processing.',
-    img: '/goswarm.jpeg', // Add an image path if available
-    href: '/projects/goswarm',
-    preview: 'https://swarm.paramarora.com', // Live preview link
-    github: 'https://github.com/par4m/goSwarm', // GitHub repo
-    alt: 'GoSwarm',
-    platform: 'Web',
-    stack: 'godot4, golang, sqlite, sqlc, protobuf, docker',
-    delay: 0.1,
-  },
+
   {
     title: 'iCare - Healthcare AI Assistant',
     description:
@@ -89,5 +90,18 @@ export const projects = [
     platform: 'Web',
     stack: 'PyTorch, Next.js, Multimodal AI, Sentiment Analysis',
     delay: 0.4,
+  },
+  {
+    title: 'GoSwarm - A MMO Game in Go',
+    description:
+      'A real-time multiplayer game powered by Godot 4 and Golang, featuring scalable networking and async processing.',
+    img: '/goswarm.jpeg', // Add an image path if available
+    href: '/projects/goswarm',
+    preview: 'https://swarm.paramarora.com', // Live preview link
+    github: 'https://github.com/par4m/goSwarm', // GitHub repo
+    alt: 'GoSwarm',
+    platform: 'Web',
+    stack: 'godot4, golang, sqlite, sqlc, protobuf, docker',
+    delay: 0.1,
   },
 ]
