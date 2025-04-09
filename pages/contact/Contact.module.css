@@ -33,6 +33,18 @@
 
   .calendarBox {
     padding: 30px 0 10px;
-    height: 600px;
+    height: auto;
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introText {
+    font-size: 0.9rem;
+    padding: 20px 8px 0;
+  }
+
+  .calendarBox {
+    padding: 20px 0 5px;
   }
 }

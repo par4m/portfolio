@@ -9,7 +9,7 @@ export const NavbarWrapper = () => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false)
   const [activeMenu, setActiveMenu] = useState()
   const router = useRouter()
-  const collapseItems = ['About', 'Projects', 'Blog']
+  const collapseItems = ['About', 'Projects', 'Blog', 'Contact']
 
   useEffect(() => {
     // @ts-ignore
@@ -114,7 +114,8 @@ export const NavbarWrapper = () => {
             isActive={
               (item === 'About' && router.pathname === '/') ||
               (item === 'Projects' && router.pathname === '/projects') ||
-              (item === 'Blog' && router.pathname === '/blog')
+              (item === 'Blog' && router.pathname === '/blog') ||
+              (item === 'Contact' && router.pathname === '/contact')
             }
           >
             <NextLink href={(item === 'About' && '/') || item.toLowerCase()}>
