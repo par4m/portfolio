@@ -26,6 +26,32 @@ export const projects = [
     delay: 0.1,
   },
   {
+    title: 'DSA in 90 Days',
+    description:
+      'A Roadmap site made for the YouTube playlist DSA in 90 Days. Authentication, AI-powered Rich text-editor, AI Time Complexity Analysis and Feedback, Solution Summary. Themes, Timer and many more... ',
+    img: '/dsa.png', // Add an image path if available
+    href: '/projects/dsa90',
+    preview: 'https://dsa90.vercel.app', // Add a live preview link if available
+    github: 'https://github.com/par4m/dsa90days', // Add GitHub link if available
+    alt: 'buztop',
+    platform: 'Web',
+    stack: 'Vite, Shadcn, Radix UI, React.js, TypeScript, Firebase, Golang',
+    delay: 0.1,
+  },
+  {
+    title: 'Go-yt',
+    description:
+      'Golang microservice that powers https://dsa90.vercel.app. Automatically pull videos from the youtube playlist and categorize them, extract tags, video urls, leetcode links and topics',
+    img: '/github.png', // Add an image path if available
+    href: '/projects/go-yt',
+    preview: 'https://dsa90.vercel.app', // Add a live preview link if available
+    github: 'https://github.com/par4m/go-yt', // Add GitHub link if available
+    alt: '',
+    platform: 'Cli',
+    stack: 'Golang, YouTube API',
+    delay: 0.1,
+  },
+  {
     title: 'VerbAI - Autonomous AI Voice Agents',
     description:
       'Self hosted, scalable AI voice platform delivering real time text to speech, voice conversion, and custom voice generation APIs with 90% faster audio synthesis to seamlessly power AI voice agents and voice driven applications ',

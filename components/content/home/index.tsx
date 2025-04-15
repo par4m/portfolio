@@ -58,19 +58,19 @@ export const Home = () => {
 
   return (
     <Box css={{ px: '$12', '@xsMax': { px: '$10' }, width: '100%' }}>
-      <Card variant="flat" css={{ marginBottom: '$10' }}>
-        <Card.Body css={{ backgroundColor: '$accents2' }}>
-          <Text css={{ fontFamily: 'inherit', textAlign: 'center' }} as={'p'}>
-            Hello, I&apos;m Param. I&apos;m a software engineer based in India!
-          </Text>
-        </Card.Body>
-      </Card>
+      {/* <Card variant="flat" css={{ marginBottom: '$10' }}> */}
+      {/*   <Card.Body css={{ backgroundColor: '$accents2' }}> */}
+      {/*     <Text css={{ fontFamily: 'inherit', textAlign: 'center' }} as={'p'}> */}
+      {/*       Hello, I&apos;m Param. I&apos;m a software engineer based in India! */}
+      {/*     </Text> */}
+      {/*   </Card.Body> */}
+      {/* </Card> */}
       <Flex justify={'between'} css={{ pb: '$10' }}>
         <Box css={{ alignSelf: 'center' }}>
           <Text h2 css={{ my: '$0' }}>
             Param Arora
           </Text>
-          <Text css={{ fontFamily: 'inherit' }}>Software Engineer ( Backend / DevOps / ML )</Text>
+          <Text css={{ fontFamily: 'inherit' }}></Text>
         </Box>
 
         <Avatar
@@ -91,9 +91,10 @@ export const Home = () => {
               display: 'block',
             }}
           >
-            Hi, I’m Param. I’m a 3rd Year CS student @ MIT Manipal who loves open source, working
-            with Rust and Golang. I’m also into DevOps and ML, and I enjoy building things that are
-            scalable, efficient, and impactful.
+            Hey, I’m Param — a 3rd year CS student at MIT Manipal. I’m passionate about open-source
+            and love building with Rust, Python, and Go. My interests lie at the intersection of
+            distributed systems, LLMs, vector semantics, and agentic AI workflows — especially
+            around RAG and scalable embeddings.
           </Text>
 
           <Flex justify={'center'} css={{ mt: '$8' }}>
