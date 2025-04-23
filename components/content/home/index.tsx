@@ -113,6 +113,12 @@ export const Home = () => {
           <Box as={'ul'} css={{ m: 0 }}>
             <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
               <Text span css={{ mr: '1em' }} weight={'bold'}>
+                Apr 2025 - Present
+              </Text>
+              <Text span>CocoIndex - Contributer</Text>
+            </Box>
+            <Box as={'li'} css={{ textIndent: '-3.4em', pl: '3.4em' }}>
+              <Text span css={{ mr: '1em' }} weight={'bold'}>
                 Mar 2025 - Present
               </Text>
               <Text span>Scottish Tech Army - Volunteer</Text>
